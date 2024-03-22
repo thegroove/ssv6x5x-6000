@@ -26,14 +26,14 @@ if [ "$PLATFORM" != "" ]; then
 if [ $? -eq 0 ]; then
     echo "Please check SVN first !!"
 else
-cp platforms/platform-config.mak .
-cp platforms/$PLATFORM.cfg ssv6x5x.cfg
-cp platforms/$PLATFORM-wifi.cfg ssv6x5x-wifi.cfg
-cp platforms/$PLATFORM-wifi.cfg image/ssv6x5x-wifi.cfg
-cp platforms/$PLATFORM-generic-wlan.c ssv6x5x-generic-wlan.c
-cp Makefile.cross_linux Makefile
+#cp platforms/platform-config.mak .
+#cp platforms/$PLATFORM.cfg ssv6x5x.cfg
+#cp platforms/$PLATFORM-wifi.cfg ssv6x5x-wifi.cfg
+#cp platforms/$PLATFORM-wifi.cfg image/ssv6x5x-wifi.cfg
+#cp platforms/$PLATFORM-generic-wlan.c ssv6x5x-generic-wlan.c
+#cp Makefile.cross_linux Makefile
 #sed -i 's,PLATFORMS =,PLATFORMS = '"$PLATFORM"',g' Makefile
-make clean
+#make clean
 
 # Remove garbage
 svn rm wpa_supplicant.conf
